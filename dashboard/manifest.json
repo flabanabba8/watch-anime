@@ -1,0 +1,7 @@
+{
+  "name": "watch-anime",
+  "label": "Watch Anime",
+  "version": "0.1.0",
+  "description": "Search, select episodes and continue playback on the Hermes host.",
+  "api": "plugin_api.py"
+}

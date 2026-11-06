@@ -1,0 +1,14 @@
+name: watch-anime
+version: "0.1.0"
+description: "Find anime with ani-cli's pinned provider, choose the exact season, and resume mpv from observed playback progress."
+author: "Watch Anime contributors"
+license: GPL-3.0-only
+requires_hermes: ">=0.22.0"
+provides_tools:
+  - anime_search
+  - anime_episodes
+  - anime_play
+  - anime_status
+  - anime_control
+  - anime_history
+  - anime_resume
