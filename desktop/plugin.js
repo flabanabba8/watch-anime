@@ -43,7 +43,7 @@ function AnimePage({ ctx }) {
     const timer = setInterval(poll, 2000)
     return () => { active = false; clearInterval(timer) }
   }, [ctx, session?.id, session?.state])
-  const button = (label, onClick, extra = {}) => h('button', { style: field, disabled: busy, onClick, ...extra }, label)
+  const button = (label, onClick, extra = {}) => h('button', { style: { ...field, opacity: (extra.disabled ?? busy) ? 0.5 : 1 }, disabled: busy, onClick, ...extra }, label)
   const select = (label, value, change, values) => h('label', { style: { display: 'grid', gap: 5 } }, label,
     h('select', { style: field, value, onChange: e => change(e.target.value), disabled: busy },
       values.map(([v, name]) => h('option', { value: v, key: v }, name))))

@@ -1,5 +1,7 @@
 # Watch Anime verification
 
+- A standalone headless browser fixture with mock history and approximate theme variables was inspected at 375 px. The initially disabled search button now appears distinct and the page had no horizontal overflow; the Desktop flow test passed. No provider, playback or native Hermes Desktop was used.
+
 Development checks on2026-11-05. No public submission or release.
 
 ## Passed
