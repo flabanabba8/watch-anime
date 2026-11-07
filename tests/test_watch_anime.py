@@ -32,6 +32,12 @@ class ProviderFixture(Provider):
 
 
 class WatchAnimeTests(unittest.TestCase):
+    def test_unsupported_platform_refuses_before_storage_or_provider(self):
+        with patch.object(package.sys, 'platform', 'win32'):
+            result=json.loads(package.invoke('anime_search',{'query':'fictional'}))
+            self.assertIn('requires Linux',result['error']);self.assertFalse(result['retry_automatically'])
+            with self.assertRaisesRegex(ValueError,'requires Linux'):Provider().call('fictional')
+
     def test_exact_title_and_quality_fallback(self):
         p = ProviderFixture()
         self.assertEqual(p.search('A & B')[0]['title'], 'Original & Test')

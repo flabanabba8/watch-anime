@@ -28,8 +28,9 @@ Development checks on2026-11-05. No public submission or release.
 - Actual Hermes Desktop visual integration and a public-demo video.
 - Audible/visible user playback review. Headless decoder success alone does not
   establish subjective picture, sound or subtitle quality.
-- Windows support: not implemented. Legion Go's saved SSH destination was
-  unreachable on this check. No software/settings on the Go were changed.
+- Native Windows Python 3.14 on the Legion Go loaded the plugin and confirmed
+  a search request reports the Linux requirement before provider or player use.
+  Windows playback remains unimplemented; no audio or desktop was used.
 - Long-session/reboot behavior, provider outages during playback, and dub playback
   against live sources. Offline fixture success does not establish provider uptime.
 - Public publication audit (all exposed files/history/artifacts), repository,

@@ -21,7 +21,9 @@ Resume always resolves a fresh stream instead of reusing expired signed URLs.
 
 This development version supports **Linux**. Required: Python 3.11+, a POSIX `sh`,
 sed/base64/od and mpv. Install dependencies through your package manager; the
-plugin does not install or update software. Windows/Legion Go checks are pending.
+plugin does not install or update software. On Windows the tools report the
+Linux requirement before contacting the provider or launching a player; Windows
+playback is not implemented.
 
 Install the `watch-anime` directory through Hermes's normal local plugin flow.
 There are no Python package dependencies, credentials or private server settings.

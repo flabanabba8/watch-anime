@@ -29,6 +29,7 @@ class Provider:
         self.state_dir = Path(state_dir) if state_dir is not None else None
 
     def call(self, *args):
+        if sys.platform != 'linux': raise ValueError('Watch Anime provider requires Linux')
         if self.state_dir is None:
             return self._run(*args)
         import fcntl

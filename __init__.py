@@ -1,5 +1,6 @@
 """Watch Anime — an independently installable Hermes plugin."""
 import json
+import sys
 from .player import WatchAnime
 
 IDENTIFIER = {'type': 'string', 'description': 'Exact title/season ID returned by anime_search.'}
@@ -26,6 +27,8 @@ TOOLS = {
 
 
 def invoke(name, args):
+    if sys.platform != 'linux':
+        return json.dumps({'error': 'Watch Anime requires Linux in this development build', 'retry_automatically': False})
     from plugins.plugin_storage import plugin_data_dir
     try:
         app = WatchAnime(plugin_data_dir('watch-anime'))
