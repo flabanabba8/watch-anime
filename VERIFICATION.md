@@ -40,3 +40,4 @@ Development checks on2026-11-05. No public submission or release.
 
 Detailed local receipts are outside this package under the contest workspace's
 ignored evidence directory. They are not a portable claim about another machine.
+- 2026-11-07: live check on this Linux machine through the plugin's own provider code: a search for Frieren returned titles with stable IDs, the first season's episode list loaded, and episode 1 resolved at the requested 720p with no quality fallback. A headless mpv run (no window, null audio output) played the resolved stream to a 7-second position at 1280x720 H.264. No desktop playback, picture or sound review, long playback, Windows, or rights assessment of the sources. Twelve unit tests pass.
