@@ -1,5 +1,7 @@
 # Watch Anime
 
+![Watch Anime: find your next episode](assets/thumbnail.jpg)
+
 Find the exact anime season, choose an episode, and continue where you actually
 stopped watching. Uses ani-cli's pinned provider code and local mpv playback.
 
