@@ -3,6 +3,15 @@
 Find the exact anime season, choose an episode, and continue where you actually
 stopped watching. Uses ani-cli's pinned provider code and local mpv playback.
 
+**At a glance**
+
+- **Install:** `hermes plugins install flabanabba8/watch-anime`, then `hermes plugins enable watch-anime`.
+- **Needs:** Hermes 0.22 or later, Linux, mpv, and the pinned ani-cli provider script included in this repository.
+- **Internet:** It contacts anime streaming sites through ani-cli provider code to search and resolve streams on demand. Nothing is downloaded or stored beyond your watch position.
+- **Limits:** Linux only. The sites serve content whose licensing you must judge; the plugin does not host or verify any of it. Site changes can break search or playback.
+- **Credits:** Uses ani-cli by pystardust (pinned to a specific commit, see UPSTREAM.json) and mpv. Licence: GPL-3.0-only.
+- **AI assistance:** Written with AI coding assistants (Anthropic Claude and OpenAI Codex agents) under the maintainer's direction; what was actually tested is listed in VERIFICATION.md.
+
 ## Use from Hermes
 
 - “Search for Frieren.” Hermes shows matching titles with stable IDs.

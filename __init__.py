@@ -38,6 +38,9 @@ def invoke(name, args):
 
 
 def register(ctx):
+    if hasattr(ctx, 'register_skill'):
+        from pathlib import Path
+        ctx.register_skill('watch-anime', Path(__file__).parent / 'skills/watch-anime/SKILL.md', description='Use watch-anime with its bundled playback knowledge and current tool contracts')
     for name, (description, properties, required) in TOOLS.items():
         ctx.register_tool(name=name, toolset='watch_anime', schema={
             'name': name, 'description': description, 'parameters': {
